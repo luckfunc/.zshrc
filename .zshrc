@@ -119,6 +119,8 @@ alias code='open -a /Applications/Visual\ Studio\ Code.app'
 alias python=python3
 # pnpm run dev
 alias pd='pnpm run dev'
+# 清除本地dns缓存
+alias clearDns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"  # This loads nvm
